@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Persona implements Serializable {
 
     // Prueba de commit stage
-    // A comment
+
     private String name;
 
     private String username;
