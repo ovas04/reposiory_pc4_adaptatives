@@ -22,8 +22,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Test Build
+      run: mvn surefire:test
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn clean install --llr -Dmaven.test.skip=true
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
