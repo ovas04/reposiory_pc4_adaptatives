@@ -35,4 +35,7 @@ jobs:
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Deploy Heroku
+      run: |
+        git push heroku -f
 
