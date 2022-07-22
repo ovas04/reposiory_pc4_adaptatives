@@ -15,8 +15,8 @@ public class PersonaServiceImpl implements IPersonaService{
     public List<Persona> listar() {
 
         listaPersonas.add(new Persona("Oscar","ovas"));
-        listaPersonas.add(new Persona("Oscar","ovas"));
-        listaPersonas.add(new Persona("Oscar","ovas"));
+        listaPersonas.add(new Persona("Carolina","ovas"));
+        listaPersonas.add(new Persona("Jake","ovas"));
 
         return  listaPersonas;
     }
